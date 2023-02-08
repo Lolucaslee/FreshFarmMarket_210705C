@@ -1,0 +1,18 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome @Model.user.FullName</h1>
+    <p>Name: @Model.user.FullName</p>
+    <p>Credit Card Number: @Model.user.CreditCardNumber</p>
+    <p>Password: @Model.user.PasswordHash</p>
+    <p>Gender: @Model.user.Gender</p>
+    <p>Phone number: @Model.user.MobileNumber</p>
+    <p>Delivery address: @Model.user.DeliveryAddress</p>
+    <p>Email: @Model.user.Email</p>
+    <img src="@Model.user.ImageURL" style="width:400px;height:400px; border-radius: 50%;" />
+    <p>About me: @Model.user.AboutMe</p>
+</div>
